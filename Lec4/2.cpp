@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 int rev(int n){
     int rs=0;
     while(n>0){
