@@ -1,0 +1,30 @@
+# Build directories
+build/
+cmake-build-debug/
+cmake-build-release/
+bin/
+*.exe
+*.out
+*.o
+*.a
+
+# IDE directories
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# macOS specific
+.DS_Store
+*.dSYM/
+.AppleDouble
+.LSOverride
+
+# Object files
+*.obj
+
+# Generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
