@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SumOfBeauty",
+            "request": "launch",
+            "mainClass": "Strings.SumOfBeauty",
+            "projectName": "Untitled_7606ae84"
+        },
+        {
+            "type": "java",
             "name": "Basic",
             "request": "launch",
             "mainClass": "Strings.Basic",
