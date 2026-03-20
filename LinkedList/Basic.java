@@ -25,9 +25,47 @@ public void addFirst(String data){
 
     newNode.next = head;
     head = newNode;
+ 
 
 
+}
 
+
+//delete first
+
+
+public void deleteFirst(){
+    if( head == null){
+        System.out.println("List is empty");
+        return;
+    }
+
+    head = head.next;    //single line to del first head
+}
+
+
+//delete last
+
+public void deleteLast(){
+    if(head == null){
+        System.out.println("list is empty");
+        return;
+    }
+ if(head.next == null){
+    head = null;
+    return;
+ }
+
+
+    Node secondLast = head;
+    Node lastNode = head.next;
+    while(lastNode.next != null){
+        lastNode = lastNode.next;
+        secondLast = secondLast.next;
+    }
+
+
+    secondLast.next = null;
 }
 
 public void addLast(String data){
@@ -67,6 +105,15 @@ public void printList(){
     Basic list = new Basic();
     list.addFirst("a");
     list.addFirst("is");
+    list.printList();
+
+    list.deleteFirst();
+    list.printList();
+
+    list.addFirst("this");
+    list.printList();
+
+    list.deleteLast();
     list.printList();
 
    }
