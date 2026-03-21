@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SearchLl",
+            "request": "launch",
+            "mainClass": "LinkedList.SearchLl",
+            "projectName": "Untitled_7606ae84"
+        },
+        {
+            "type": "java",
             "name": "SumOfBeauty",
             "request": "launch",
             "mainClass": "Strings.SumOfBeauty",
