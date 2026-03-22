@@ -110,11 +110,7 @@ public void printList(){
     list.deleteFirst();
     list.printList();
 
-    list.addFirst("this");
-    list.printList();
-
-    list.deleteLast();
-    list.printList();
+ 
 
    }
     
