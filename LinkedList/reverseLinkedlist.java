@@ -57,11 +57,11 @@ public class reverseLinkedlist {
     }
 public static void main(String[] args) {
     reverseLinkedlist list = new reverseLinkedlist();
-    list.addFirst(1);
-    list.addFirst(2);
-    list.addFirst(3);
-    list.addFirst(4);
-    System.out.println("Original List:");
+    list.addFirst(10);
+    list.addFirst(22);
+    list.addFirst(31);
+    list.addFirst(40);
+    System.out.println("List:");
     list.printList();
     list.reverse();
     System.out.println("Reversed List:");
