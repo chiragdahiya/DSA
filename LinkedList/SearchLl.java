@@ -29,6 +29,8 @@ public void addFirst(int data){
 }
 
 
+
+
 public boolean searchL(int key){
     Node curr = head;
 
