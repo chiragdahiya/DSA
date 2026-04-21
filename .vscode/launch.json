@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Sum",
+            "request": "launch",
+            "mainClass": "Recurssion.Sum",
+            "projectName": "DSA_6afbcd21"
+        },
+        {
+            "type": "java",
             "name": "First",
             "request": "launch",
             "mainClass": "Recurssion.First",
