@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "First",
+            "request": "launch",
+            "mainClass": "Recurssion.First",
+            "projectName": "DSA_6afbcd21"
+        },
+        {
+            "type": "java",
             "name": "SearchLl",
             "request": "launch",
             "mainClass": "LinkedList.SearchLl",
