@@ -1,5 +1,5 @@
 import java.util.*;
-package Recurssion;
+package Recursion;
 
 public class First {
 
