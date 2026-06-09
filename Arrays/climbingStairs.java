@@ -1,0 +1,30 @@
+package Arrays;
+
+public class climbingStairs {
+
+
+
+        public static int climbStairs(int n){
+            if(n<=2){
+                return n;
+            }
+
+            int first = 1;
+            int second = 2;
+
+            for(int i=3;i<=n;i++){
+                int next = first +second;
+                first = second;
+                second = next;
+            }
+
+            return second;
+        }
+
+        public static void main(String[] args){
+          System.out.println(climbingStairs.climbStairs(5));
+        }
+
+    }
+    
+
