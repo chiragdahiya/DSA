@@ -1,23 +1,23 @@
 class Solution {
-    public String addBinary(String a, String b) {
 
-        int i = a.length()-1;
-        int j = b.length()-1;
+    private void swap(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
 
-        int carry = 0;
+    public void moveZeroes(int[] nums) {
+        int n = nums.length;
 
-        StringBuilder result = new StringBuilder();
-
-        while(i>=0 || j>=0 ||carry!=0){
-            int sum = carry;
-
-            if(i>=0){
-                sum=sum+a.charAt(i)-'0';
-                i--;
-
+        int j = -1;
+        for (int i = 0; i < n; i++) {
+            if (nums[i] == 0) {
+                j = i;
+                break;
             }
-
-            if(j>=0){
-                sum=sum+b.charAt(j)-'0';
-                j--;
-            }
+        }
+        if (j == -1) {
+            return;
+        }
+        for (int i = j + 1; i < n; i++) {
+            if (nums[i] != 0) {
