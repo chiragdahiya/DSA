@@ -2,7 +2,7 @@
 // Problem: 412 | Difficulty: easy | Language: java
 // Status: Accepted
 // Problem URL: https://leetcode.com/problems/fizz-buzz/
-// Submission URL: https://leetcode.com/problems/fizz-buzz/submissions/2068907583/
+// Submission URL: https://leetcode.com/problems/fizz-buzz/description/
 // Synced by LeetCode to GitHub extension
 class Solution {
     public List<String> fizzBuzz(int n) {
