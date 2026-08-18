@@ -1,17 +1,22 @@
-leftmax = Math.max(leftmax, height[j]);
+class Solution {
+    public int trap(int[] height) {
+        int n = height.length;
+        int ans = 0;
+        int l = 0;
+        int r = n-1;
+
+        int lmax = 0;
+        int rmax = 0;
+
+        while(l<r){
+            lmax = Math.max(lmax, height[l]);
+            rmax = Math.max(rmax, height[r]);
+
+
+            if(lmax<rmax){
+                ans += lmax - height[l];
+                l++;
             }
-            for(int j=i;j<n;j++){
-                rightmax = Math.max(rightmax, height[j]);
-                
-            }
-         total += Math.min(leftmax,rightmax) - height[i];
-        
-        
-        
-        
-        
-    }
-     return total;
-   
-}
-}
+            else{
+                ans += rmax - height[r];
+               r--;
